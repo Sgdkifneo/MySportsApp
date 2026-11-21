@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.MySportsApp" parent="Theme.Material3.DayNight">
+    </style>
+
+    <style name="Theme.MySportsApp" parent="Base.Theme.MySportsApp" />
+</resources>

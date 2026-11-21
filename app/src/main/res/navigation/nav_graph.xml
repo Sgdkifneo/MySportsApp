@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mysportsapp.HomeFragment"
+        android:label="Home" />
+
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.mysportsapp.AccountFragment"
+        android:label="Account" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.mysportsapp.ProfileFragment"
+        android:label="Profile" />
+
+    <fragment
+        android:id="@+id/mySportsFragment"
+        android:name="com.example.mysportsapp.MySportsFragment"
+        android:label="My Sports">
+        <action
+            android:id="@+id/action_mySportsFragment_to_footballFragment"
+            app:destination="@id/footballFragment" />
+        <action
+            android:id="@+id/action_mySportsFragment_to_basketballFragment"
+            app:destination="@id/basketballFragment" />
+        <action
+            android:id="@+id/action_mySportsFragment_to_tennisFragment"
+            app:destination="@id/tennisFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/footballFragment"
+        android:name="com.example.mysportsapp.FootballFragment"
+        android:label="Football" />
+
+    <fragment
+        android:id="@+id/basketballFragment"
+        android:name="com.example.mysportsapp.BasketballFragment"
+        android:label="Basketball" />
+
+    <fragment
+        android:id="@+id/tennisFragment"
+        android:name="com.example.mysportsapp.TennisFragment"
+        android:label="Tennis" />
+</navigation>
